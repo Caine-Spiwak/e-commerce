@@ -6,7 +6,8 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      '/api': 'http://localhost:5555'
+      '/api': 'http://localhost:5555',
+      '/uploads': 'http://localhost:5555',
     }
   }
 })
